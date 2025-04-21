@@ -1,0 +1,372 @@
+
+>>> %Run multi_robo.py
+Запуск датчиков
+Запуск моторов
+Запуск камеры: 0
+Запуск камеры: 1
+Opened SPI device: /dev/spidev0.0
+/home/alexio/PycharmProjects/robocup/rms/.venv/lib/python3.11/site-packages/paddle/utils/cpp_extension/extension_utils.py:711: UserWarning: No ccache found. Please be aware that recompiling all source files may be required. You can download and install ccache from: https://github.com/ccache/ccache/blob/master/doc/INSTALL.md
+  warnings.warn(warning_message)
+/home/alexio/PycharmProjects/robocup/rms/.venv/lib/python3.11/site-packages/paddle/utils/cpp_extension/extension_utils.py:711: UserWarning: No ccache found. Please be aware that recompiling all source files may be required. You can download and install ccache from: https://github.com/ccache/ccache/blob/master/doc/INSTALL.md
+  warnings.warn(warning_message)
+start calibration
+
+
+{'id': 'camera', 'time': 3.26, 'cam_pos': 'rigth', 'state': 0, 'text': 'starting'}
+rigth camera
+{'id': 'camera', 'time': 3.46, 'cam_pos': 'left', 'state': 0, 'text': 'starting'}
+left camera
+[1:27:26.261664931] [3751]  INFO Camera camera_manager.cpp:327 libcamera v0.4.0+53-29156679
+[1:27:26.271597706] [3800]  INFO RPI pisp.cpp:720 libpisp version v1.1.0 e7974a156008 27-01-2025 (21:50:51)
+[1:27:26.281627278] [3800]  INFO RPI pisp.cpp:1179 Registered camera /base/axi/pcie@1000120000/rp1/i2c@88000/ov5647@36 to CFE device /dev/media0 and ISP device /dev/media3 using PiSP variant BCM2712_C0
+[1:27:26.281713759] [3800]  INFO RPI pisp.cpp:720 libpisp version v1.1.0 e7974a156008 27-01-2025 (21:50:51)
+[1:27:26.290798442] [3800]  INFO RPI pisp.cpp:1179 Registered camera /base/axi/pcie@1000120000/rp1/i2c@80000/ov5647@36 to CFE device /dev/media1 and ISP device /dev/media4 using PiSP variant BCM2712_C0
+[1:27:26.294860607] [3751]  INFO Camera camera.cpp:1202 configuring streams: (0) 640x480-XBGR8888 (1) 640x480-GBRG_PISP_COMP1
+[1:27:26.295097589] [3800]  INFO RPI pisp.cpp:1484 Sensor: /base/axi/pcie@1000120000/rp1/i2c@80000/ov5647@36 - Selected sensor format: 640x480-SGBRG10_1X10 - Selected CFE format: 640x480-PC1g
+[1:27:26.314840954] [3751]  INFO Camera camera.cpp:1202 configuring streams: (0) 640x480-XBGR8888 (1) 1296x972-GBRG_PISP_COMP1
+[1:27:26.315092435] [3800]  INFO RPI pisp.cpp:1484 Sensor: /base/axi/pcie@1000120000/rp1/i2c@80000/ov5647@36 - Selected sensor format: 1296x972-SGBRG10_1X10 - Selected CFE format: 1296x972-PC1g
+[1:27:26.319435656] [3751]  INFO Camera camera.cpp:1202 configuring streams: (0) 640x480-XBGR8888 (1) 1920x1080-GBRG_PISP_COMP1
+[1:27:26.319655563] [3800]  INFO RPI pisp.cpp:1484 Sensor: /base/axi/pcie@1000120000/rp1/i2c@80000/ov5647@36 - Selected sensor format: 1920x1080-SGBRG10_1X10 - Selected CFE format: 1920x1080-PC1g
+[1:27:26.327029895] [3751]  INFO Camera camera.cpp:1202 configuring streams: (0) 640x480-XBGR8888 (1) 2592x1944-GBRG_PISP_COMP1
+[1:27:26.327148783] [3800]  INFO RPI pisp.cpp:1484 Sensor: /base/axi/pcie@1000120000/rp1/i2c@80000/ov5647@36 - Selected sensor format: 2592x1944-SGBRG10_1X10 - Selected CFE format: 2592x1944-PC1g
+[{'format': SGBRG10_CSI2P, 'unpacked': 'SGBRG10', 'bit_depth': 10, 'size': (640, 480), 'fps': 58.92, 'crop_limits': (16, 0, 2560, 1920), 'exposure_limits': (134, 4879289, 20000)}, {'format': SGBRG10_CSI2P, 'unpacked': 'SGBRG10', 'bit_depth': 10, 'size': (1296, 972), 'fps': 46.34, 'crop_limits': (0, 0, 2592, 1944), 'exposure_limits': (86, 3066985, 20000)}, {'format': SGBRG10_CSI2P, 'unpacked': 'SGBRG10', 'bit_depth': 10, 'size': (1920, 1080), 'fps': 32.81, 'crop_limits': (348, 434, 1928, 1080), 'exposure_limits': (110, 3066979, 20000)}, {'format': SGBRG10_CSI2P, 'unpacked': 'SGBRG10', 'bit_depth': 10, 'size': (2592, 1944), 'fps': 15.63, 'crop_limits': (0, 0, 2592, 1944), 'exposure_limits': (130, 3066985, 20000)}]
+[1:27:26.339071132] [3751]  INFO Camera camera.cpp:1202 configuring streams: (0) 1296x972-BGR888 (1) 1296x972-GRBG_PISP_COMP1
+[1:27:26.339314039] [3800]  INFO RPI pisp.cpp:1484 Sensor: /base/axi/pcie@1000120000/rp1/i2c@80000/ov5647@36 - Selected sensor format: 1296x972-SGRBG10_1X10 - Selected CFE format: 1296x972-PC1G
+[1:27:26.470026392] [3750]  INFO Camera camera_manager.cpp:327 libcamera v0.4.0+53-29156679
+[1:27:26.487343683] [3808]  INFO RPI pisp.cpp:720 libpisp version v1.1.0 e7974a156008 27-01-2025 (21:50:51)
+[1:27:26.499098662] [3808]  INFO RPI pisp.cpp:1179 Registered camera /base/axi/pcie@1000120000/rp1/i2c@88000/ov5647@36 to CFE device /dev/media0 and ISP device /dev/media3 using PiSP variant BCM2712_C0
+[1:27:26.499266828] [3808]  INFO RPI pisp.cpp:720 libpisp version v1.1.0 e7974a156008 27-01-2025 (21:50:51)
+[1:27:26.511016325] [3808]  INFO RPI pisp.cpp:1179 Registered camera /base/axi/pcie@1000120000/rp1/i2c@80000/ov5647@36 to CFE device /dev/media1 and ISP device /dev/media4 using PiSP variant BCM2712_C0
+[1:27:26.514401639] [3750]  INFO Camera camera.cpp:1202 configuring streams: (0) 640x480-XBGR8888 (1) 640x480-GBRG_PISP_COMP1
+[1:27:26.514573991] [3808]  INFO RPI pisp.cpp:1484 Sensor: /base/axi/pcie@1000120000/rp1/i2c@88000/ov5647@36 - Selected sensor format: 640x480-SGBRG10_1X10 - Selected CFE format: 640x480-PC1g
+[1:27:26.542000687] [3750]  INFO Camera camera.cpp:1202 configuring streams: (0) 640x480-XBGR8888 (1) 1296x972-GBRG_PISP_COMP1
+[1:27:26.542713927] [3808]  INFO RPI pisp.cpp:1484 Sensor: /base/axi/pcie@1000120000/rp1/i2c@88000/ov5647@36 - Selected sensor format: 1296x972-SGBRG10_1X10 - Selected CFE format: 1296x972-PC1g
+[1:27:26.550587925] [3750]  INFO Camera camera.cpp:1202 configuring streams: (0) 640x480-XBGR8888 (1) 1920x1080-GBRG_PISP_COMP1
+[1:27:26.550933129] [3808]  INFO RPI pisp.cpp:1484 Sensor: /base/axi/pcie@1000120000/rp1/i2c@88000/ov5647@36 - Selected sensor format: 1920x1080-SGBRG10_1X10 - Selected CFE format: 1920x1080-PC1g
+[1:27:26.557703312] [3750]  INFO Camera camera.cpp:1202 configuring streams: (0) 640x480-XBGR8888 (1) 2592x1944-GBRG_PISP_COMP1
+[1:27:26.558004090] [3808]  INFO RPI pisp.cpp:1484 Sensor: /base/axi/pcie@1000120000/rp1/i2c@88000/ov5647@36 - Selected sensor format: 2592x1944-SGBRG10_1X10 - Selected CFE format: 2592x1944-PC1g
+[{'format': SGBRG10_CSI2P, 'unpacked': 'SGBRG10', 'bit_depth': 10, 'size': (640, 480), 'fps': 58.92, 'crop_limits': (16, 0, 2560, 1920), 'exposure_limits': (134, 4879289, 20000)}, {'format': SGBRG10_CSI2P, 'unpacked': 'SGBRG10', 'bit_depth': 10, 'size': (1296, 972), 'fps': 46.34, 'crop_limits': (0, 0, 2592, 1944), 'exposure_limits': (86, 3066985, 20000)}, {'format': SGBRG10_CSI2P, 'unpacked': 'SGBRG10', 'bit_depth': 10, 'size': (1920, 1080), 'fps': 32.81, 'crop_limits': (348, 434, 1928, 1080), 'exposure_limits': (110, 3066979, 20000)}, {'format': SGBRG10_CSI2P, 'unpacked': 'SGBRG10', 'bit_depth': 10, 'size': (2592, 1944), 'fps': 15.63, 'crop_limits': (0, 0, 2592, 1944), 'exposure_limits': (130, 3066985, 20000)}]
+[1:27:26.566563643] [3750]  INFO Camera camera.cpp:1202 configuring streams: (0) 1296x972-BGR888 (1) 1296x972-GRBG_PISP_COMP1
+[1:27:26.567047902] [3808]  INFO RPI pisp.cpp:1484 Sensor: /base/axi/pcie@1000120000/rp1/i2c@88000/ov5647@36 - Selected sensor format: 1296x972-SGRBG10_1X10 - Selected CFE format: 1296x972-PC1G
+calibration complite
+len read data: 4095
+start auto measure in bin format
+{'ExposureTime': 66652, 'AnalogueGain': 5.4375, 'ColourGains': (1.6345794200897217, 1.0025080442428589)}
+size: (972, 1296, 3)
+[2025/04/13 22:32:44] ppocr WARNING: Since the angle classifier is not initialized, it will not be used during the forward process
+{'ExposureTime': 66652, 'AnalogueGain': 4.9375, 'ColourGains': (0.8798708915710449, 2.4237256050109863)}
+i2c sensor adr:4 error
+{'id': 'camera', 'time': 6.41, 'cam_pos': 'rigth', 'state': 1, 'text': ''}
+rigth camera
+size: (972, 1296, 3)
+[2025/04/13 22:32:45] ppocr WARNING: Since the angle classifier is not initialized, it will not be used during the forward process
+i2c sensor adr:2 error
+i2c sensor adr:4 error
+i2c sensor adr:2 error
+{'id': 'camera', 'time': 6.7, 'cam_pos': 'left', 'state': 1, 'text': ''}
+left camera
+i2c sensor adr:4 error
+{'id': 'sensors', 'time': 6.87, 'Yaw': np.float64(-145.41), 'Roll': np.float64(-16.98), 'Pitch': np.float64(-5.47), 'd_front': 856, 'd_left': 0, 'd_right': 0, 'd_front_left': 93, 'd_front_right': 0}
+distance front 856
+{'id': 'sensors', 'time': 7.55, 'Yaw': np.float64(-145.4), 'Roll': np.float64(-16.97), 'Pitch': np.float64(-5.47), 'd_front': 842, 'd_left': 0, 'd_right': 0, 'd_front_left': 95, 'd_front_right': 0}
+distance front 842
+i2c sensor adr:2 error
+i2c sensor adr:4 error
+[2025/04/13 22:32:47] ppocr DEBUG: dt_boxes num : 0, elapsed : 2.2943637371063232
+[2025/04/13 22:32:47] ppocr DEBUG: rec_res num  : 0, elapsed : 1.9073486328125e-06
+{'text': ('no', 0.0), 'time': 2297}
+i2c sensor adr:2 error
+size: (972, 1296, 3)
+[2025/04/13 22:32:47] ppocr WARNING: Since the angle classifier is not initialized, it will not be used during the forward process
+{'id': 'sensors', 'time': 8.13, 'Yaw': np.float64(-145.4), 'Roll': np.float64(-16.98), 'Pitch': np.float64(-5.48), 'd_front': 830, 'd_left': 0, 'd_right': 0, 'd_front_left': 90, 'd_front_right': 0}
+distance front 830
+{'id': 'camera', 'time': 8.74, 'cam_pos': 'rigth', 'state': 1, 'text': 'no'}
+rigth camera
+{'id': 'sensors', 'time': 8.76, 'Yaw': np.float64(-145.4), 'Roll': np.float64(-16.99), 'Pitch': np.float64(-5.46), 'd_front': 837, 'd_left': 0, 'd_right': 0, 'd_front_left': 86, 'd_front_right': 0}
+distance front 837
+i2c sensor adr:4 error
+[2025/04/13 22:32:47] ppocr DEBUG: dt_boxes num : 1, elapsed : 2.4105238914489746
+i2c sensor adr:2 error
+[2025/04/13 22:32:47] ppocr DEBUG: rec_res num  : 1, elapsed : 0.27812862396240234
+{'text': ('H', 0.9962365031242371), 'time': 2703}
+size: (972, 1296, 3)
+[2025/04/13 22:32:47] ppocr WARNING: Since the angle classifier is not initialized, it will not be used during the forward process
+i2c sensor adr:4 error
+i2c sensor adr:2 error
+{'id': 'sensors', 'time': 9.32, 'Yaw': np.float64(-145.4), 'Roll': np.float64(-16.99), 'Pitch': np.float64(-5.46), 'd_front': 850, 'd_left': 0, 'd_right': 0, 'd_front_left': 92, 'd_front_right': 0}
+distance front 850
+{'id': 'camera', 'time': 9.42, 'cam_pos': 'left', 'state': 1, 'text': 'H'}
+left camera
+{'id': 'sensors', 'time': 9.92, 'Yaw': np.float64(-145.4), 'Roll': np.float64(-16.99), 'Pitch': np.float64(-5.47), 'd_front': 835, 'd_left': 0, 'd_right': 0, 'd_front_left': 95, 'd_front_right': 0}
+distance front 835
+i2c sensor adr:4 error
+i2c sensor adr:2 error
+i2c sensor adr:4 error
+[2025/04/13 22:32:49] ppocr DEBUG: dt_boxes num : 0, elapsed : 2.1535518169403076
+[2025/04/13 22:32:49] ppocr DEBUG: rec_res num  : 0, elapsed : 2.86102294921875e-06
+{'text': ('no', 0.0), 'time': 2157}
+{'id': 'sensors', 'time': 10.49, 'Yaw': np.float64(-145.4), 'Roll': np.float64(-16.97), 'Pitch': np.float64(-5.47), 'd_front': 851, 'd_left': 0, 'd_right': 0, 'd_front_left': 93, 'd_front_right': 0}
+distance front 851
+{'id': 'camera', 'time': 11.01, 'cam_pos': 'rigth', 'state': 1, 'text': 'no'}
+rigth camera
+i2c sensor adr:2 error
+size: (972, 1296, 3)
+[2025/04/13 22:32:49] ppocr WARNING: Since the angle classifier is not initialized, it will not be used during the forward process
+i2c sensor adr:4 error
+i2c sensor adr:2 error
+[2025/04/13 22:32:50] ppocr DEBUG: dt_boxes num : 1, elapsed : 2.3275349140167236
+{'id': 'sensors', 'time': 11.08, 'Yaw': np.float64(-145.4), 'Roll': np.float64(-16.97), 'Pitch': np.float64(-5.48), 'd_front': 831, 'd_left': 0, 'd_right': 0, 'd_front_left': 89, 'd_front_right': 0}
+distance front 831
+{'id': 'sensors', 'time': 11.73, 'Yaw': np.float64(-145.39), 'Roll': np.float64(-16.97), 'Pitch': np.float64(-5.48), 'd_front': 834, 'd_left': 0, 'd_right': 0, 'd_front_left': 92, 'd_front_right': 0}
+distance front 834
+i2c sensor adr:4 error
+[2025/04/13 22:32:50] ppocr DEBUG: rec_res num  : 1, elapsed : 0.2106797695159912
+{'text': ('H', 0.9966505169868469), 'time': 2546}
+size: (972, 1296, 3)
+[2025/04/13 22:32:50] ppocr WARNING: Since the angle classifier is not initialized, it will not be used during the forward process
+i2c sensor adr:2 error
+i2c sensor adr:4 error
+i2c sensor adr:2 error
+{'id': 'camera', 'time': 12.08, 'cam_pos': 'left', 'state': 1, 'text': 'H'}
+left camera
+{'id': 'sensors', 'time': 12.3, 'Yaw': np.float64(-145.4), 'Roll': np.float64(-16.98), 'Pitch': np.float64(-5.48), 'd_front': 839, 'd_left': 0, 'd_right': 0, 'd_front_left': 99, 'd_front_right': 0}
+distance front 839
+{'id': 'sensors', 'time': 12.95, 'Yaw': np.float64(-145.39), 'Roll': np.float64(-16.98), 'Pitch': np.float64(-5.47), 'd_front': 837, 'd_left': 0, 'd_right': 0, 'd_front_left': 95, 'd_front_right': 0}
+distance front 837
+[2025/04/13 22:32:51] ppocr DEBUG: dt_boxes num : 0, elapsed : 2.103942394256592
+[2025/04/13 22:32:51] ppocr DEBUG: rec_res num  : 0, elapsed : 6.67572021484375e-06
+{'text': ('no', 0.0), 'time': 2112}
+i2c sensor adr:4 error
+size: (972, 1296, 3)
+[2025/04/13 22:32:51] ppocr WARNING: Since the angle classifier is not initialized, it will not be used during the forward process
+i2c sensor adr:2 error
+i2c sensor adr:4 error
+{'id': 'camera', 'time': 13.23, 'cam_pos': 'rigth', 'state': 1, 'text': 'no'}
+rigth camera
+{'id': 'sensors', 'time': 13.58, 'Yaw': np.float64(-145.38), 'Roll': np.float64(-16.97), 'Pitch': np.float64(-5.47), 'd_front': 843, 'd_left': 0, 'd_right': 0, 'd_front_left': 96, 'd_front_right': 0}
+distance front 843
+i2c sensor adr:2 error
+[2025/04/13 22:32:52] ppocr DEBUG: dt_boxes num : 1, elapsed : 2.1012988090515137
+i2c sensor adr:4 error
+[2025/04/13 22:32:53] ppocr DEBUG: rec_res num  : 1, elapsed : 0.3163456916809082
+{'text': ('H', 0.9963471293449402), 'time': 2430}
+size: (972, 1296, 3)
+[2025/04/13 22:32:53] ppocr WARNING: Since the angle classifier is not initialized, it will not be used during the forward process
+i2c sensor adr:2 error
+{'id': 'sensors', 'time': 14.22, 'Yaw': np.float64(-145.38), 'Roll': np.float64(-16.98), 'Pitch': np.float64(-5.47), 'd_front': 842, 'd_left': 0, 'd_right': 0, 'd_front_left': 97, 'd_front_right': 0}
+distance front 842
+{'id': 'camera', 'time': 14.64, 'cam_pos': 'left', 'state': 1, 'text': 'H'}
+left camera
+{'id': 'sensors', 'time': 14.82, 'Yaw': np.float64(-145.38), 'Roll': np.float64(-16.98), 'Pitch': np.float64(-5.46), 'd_front': 842, 'd_left': 0, 'd_right': 0, 'd_front_left': 90, 'd_front_right': 0}
+distance front 842
+i2c sensor adr:4 error
+i2c sensor adr:2 error
+[2025/04/13 22:32:54] ppocr DEBUG: dt_boxes num : 0, elapsed : 2.158188581466675
+[2025/04/13 22:32:54] ppocr DEBUG: rec_res num  : 0, elapsed : 1.430511474609375e-06
+{'text': ('no', 0.0), 'time': 2177}
+size: (972, 1296, 3)
+[2025/04/13 22:32:54] ppocr WARNING: Since the angle classifier is not initialized, it will not be used during the forward process
+i2c sensor adr:4 error
+i2c sensor adr:2 error
+{'id': 'sensors', 'time': 15.47, 'Yaw': np.float64(-145.38), 'Roll': np.float64(-16.99), 'Pitch': np.float64(-5.47), 'd_front': 854, 'd_left': 0, 'd_right': 0, 'd_front_left': 90, 'd_front_right': 0}
+distance front 854
+{'id': 'camera', 'time': 15.54, 'cam_pos': 'rigth', 'state': 1, 'text': 'no'}
+rigth camera
+{'id': 'sensors', 'time': 16.05, 'Yaw': np.float64(-145.38), 'Roll': np.float64(-16.99), 'Pitch': np.float64(-5.48), 'd_front': 834, 'd_left': 0, 'd_right': 0, 'd_front_left': 87, 'd_front_right': 0}
+distance front 834
+i2c sensor adr:4 error
+i2c sensor adr:2 error
+[2025/04/13 22:32:55] ppocr DEBUG: dt_boxes num : 1, elapsed : 2.2430524826049805
+i2c sensor adr:4 error
+{'id': 'sensors', 'time': 16.7, 'Yaw': np.float64(-145.38), 'Roll': np.float64(-16.98), 'Pitch': np.float64(-5.48), 'd_front': 840, 'd_left': 0, 'd_right': 0, 'd_front_left': 91, 'd_front_right': 0}
+distance front 840
+[2025/04/13 22:32:55] ppocr DEBUG: rec_res num  : 1, elapsed : 0.22127699851989746
+{'text': ('H', 0.9961601495742798), 'time': 2476}
+size: (972, 1296, 3)
+[2025/04/13 22:32:55] ppocr WARNING: Since the angle classifier is not initialized, it will not be used during the forward process
+i2c sensor adr:2 error
+i2c sensor adr:4 error
+[2025/04/13 22:32:56] ppocr DEBUG: dt_boxes num : 0, elapsed : 2.1796505451202393
+[2025/04/13 22:32:56] ppocr DEBUG: rec_res num  : 0, elapsed : 2.1457672119140625e-06
+{'text': ('no', 0.0), 'time': 2185}
+i2c sensor adr:2 error
+size: (972, 1296, 3)
+[2025/04/13 22:32:56] ppocr WARNING: Since the angle classifier is not initialized, it will not be used during the forward process
+{'id': 'camera', 'time': 17.24, 'cam_pos': 'left', 'state': 1, 'text': 'H'}
+left camera
+{'id': 'sensors', 'time': 17.37, 'Yaw': np.float64(-145.38), 'Roll': np.float64(-16.99), 'Pitch': np.float64(-5.48), 'd_front': 838, 'd_left': 0, 'd_right': 0, 'd_front_left': 97, 'd_front_right': 0}
+distance front 838
+{'id': 'camera', 'time': 17.84, 'cam_pos': 'rigth', 'state': 1, 'text': 'no'}
+rigth camera
+{'id': 'sensors', 'time': 17.96, 'Yaw': np.float64(-145.38), 'Roll': np.float64(-16.98), 'Pitch': np.float64(-5.47), 'd_front': 837, 'd_left': 0, 'd_right': 0, 'd_front_left': 96, 'd_front_right': 0}
+distance front 837
+i2c sensor adr:4 error
+i2c sensor adr:2 error
+i2c sensor adr:4 error
+{'id': 'sensors', 'time': 18.63, 'Yaw': np.float64(-145.38), 'Roll': np.float64(-16.98), 'Pitch': np.float64(-5.47), 'd_front': 839, 'd_left': 0, 'd_right': 0, 'd_front_left': 87, 'd_front_right': 0}
+distance front 839
+i2c sensor adr:2 error
+[2025/04/13 22:32:57] ppocr DEBUG: dt_boxes num : 1, elapsed : 1.8891348838806152
+[2025/04/13 22:32:58] ppocr DEBUG: rec_res num  : 1, elapsed : 0.28766512870788574
+{'text': ('H', 0.9963668584823608), 'time': 2191}
+i2c sensor adr:4 error
+size: (972, 1296, 3)
+[2025/04/13 22:32:58] ppocr WARNING: Since the angle classifier is not initialized, it will not be used during the forward process
+i2c sensor adr:2 error
+{'id': 'sensors', 'time': 19.24, 'Yaw': np.float64(-145.39), 'Roll': np.float64(-16.97), 'Pitch': np.float64(-5.47), 'd_front': 855, 'd_left': 0, 'd_right': 0, 'd_front_left': 92, 'd_front_right': 0}
+distance front 855
+{'id': 'camera', 'time': 19.55, 'cam_pos': 'left', 'state': 1, 'text': 'H'}
+left camera
+{'id': 'sensors', 'time': 19.78, 'Yaw': np.float64(-145.38), 'Roll': np.float64(-16.98), 'Pitch': np.float64(-5.46), 'd_front': 856, 'd_left': 0, 'd_right': 0, 'd_front_left': 94, 'd_front_right': 0}
+distance front 856
+i2c sensor adr:4 error
+[2025/04/13 22:32:58] ppocr DEBUG: dt_boxes num : 0, elapsed : 2.3407909870147705
+[2025/04/13 22:32:58] ppocr DEBUG: rec_res num  : 0, elapsed : 3.0994415283203125e-06
+{'text': ('no', 0.0), 'time': 2345}
+i2c sensor adr:2 error
+size: (972, 1296, 3)
+[2025/04/13 22:32:58] ppocr WARNING: Since the angle classifier is not initialized, it will not be used during the forward process
+i2c sensor adr:4 error
+i2c sensor adr:2 error
+{'id': 'camera', 'time': 20.3, 'cam_pos': 'rigth', 'state': 1, 'text': 'no'}
+rigth camera
+{'id': 'sensors', 'time': 20.4, 'Yaw': np.float64(-145.38), 'Roll': np.float64(-16.98), 'Pitch': np.float64(-5.46), 'd_front': 842, 'd_left': 0, 'd_right': 0, 'd_front_left': 91, 'd_front_right': 0}
+distance front 842
+{'id': 'sensors', 'time': 21.02, 'Yaw': np.float64(-145.38), 'Roll': np.float64(-16.99), 'Pitch': np.float64(-5.45), 'd_front': 832, 'd_left': 0, 'd_right': 0, 'd_front_left': 91, 'd_front_right': 0}
+distance front 832
+i2c sensor adr:4 error
+i2c sensor adr:2 error
+[2025/04/13 22:33:00] ppocr DEBUG: dt_boxes num : 1, elapsed : 2.289824962615967
+i2c sensor adr:4 error
+{'id': 'sensors', 'time': 21.64, 'Yaw': np.float64(-145.38), 'Roll': np.float64(-16.98), 'Pitch': np.float64(-5.45), 'd_front': 836, 'd_left': 0, 'd_right': 0, 'd_front_left': 87, 'd_front_right': 0}
+distance front 836
+i2c sensor adr:2 error
+[2025/04/13 22:33:00] ppocr DEBUG: rec_res num  : 1, elapsed : 0.3230721950531006
+{'text': ('H', 0.9964548349380493), 'time': 2622}
+size: (972, 1296, 3)
+[2025/04/13 22:33:00] ppocr WARNING: Since the angle classifier is not initialized, it will not be used during the forward process
+[2025/04/13 22:33:01] ppocr DEBUG: dt_boxes num : 0, elapsed : 2.152820348739624
+[2025/04/13 22:33:01] ppocr DEBUG: rec_res num  : 0, elapsed : 1.9073486328125e-06
+{'text': ('no', 0.0), 'time': 2161}
+i2c sensor adr:4 error
+size: (972, 1296, 3)
+[2025/04/13 22:33:01] ppocr WARNING: Since the angle classifier is not initialized, it will not be used during the forward process
+i2c sensor adr:2 error
+{'id': 'sensors', 'time': 22.26, 'Yaw': np.float64(-145.37), 'Roll': np.float64(-16.99), 'Pitch': np.float64(-5.46), 'd_front': 852, 'd_left': 0, 'd_right': 0, 'd_front_left': 93, 'd_front_right': 0}
+distance front 852
+{'id': 'camera', 'time': 22.28, 'cam_pos': 'left', 'state': 1, 'text': 'H'}
+left camera
+{'id': 'camera', 'time': 22.57, 'cam_pos': 'rigth', 'state': 1, 'text': 'no'}
+rigth camera
+{'id': 'sensors', 'time': 22.83, 'Yaw': np.float64(-145.37), 'Roll': np.float64(-16.97), 'Pitch': np.float64(-5.46), 'd_front': 846, 'd_left': 0, 'd_right': 0, 'd_front_left': 89, 'd_front_right': 0}
+i2c sensor adr:4 error
+distance front 846
+i2c sensor adr:2 error
+i2c sensor adr:4 error
+i2c sensor adr:2 error
+{'id': 'sensors', 'time': 23.41, 'Yaw': np.float64(-145.38), 'Roll': np.float64(-16.98), 'Pitch': np.float64(-5.47), 'd_front': 837, 'd_left': 0, 'd_right': 0, 'd_front_left': 88, 'd_front_right': 0}
+distance front 837
+{'id': 'sensors', 'time': 24.03, 'Yaw': np.float64(-145.37), 'Roll': np.float64(-16.98), 'Pitch': np.float64(-5.47), 'd_front': 838, 'd_left': 0, 'd_right': 0, 'd_front_left': 94, 'd_front_right': 0}
+distance front 838
+i2c sensor adr:4 error
+[2025/04/13 22:33:02] ppocr DEBUG: dt_boxes num : 1, elapsed : 2.01850962638855
+i2c sensor adr:2 error
+[2025/04/13 22:33:03] ppocr DEBUG: rec_res num  : 1, elapsed : 0.3115360736846924
+{'text': ('H', 0.9965404868125916), 'time': 2338}
+[2025/04/13 22:33:03] ppocr DEBUG: dt_boxes num : 0, elapsed : 2.164666175842285
+[2025/04/13 22:33:03] ppocr DEBUG: rec_res num  : 0, elapsed : 2.86102294921875e-06
+{'text': ('no', 0.0), 'time': 2168}
+size: (972, 1296, 3)
+[2025/04/13 22:33:03] ppocr WARNING: Since the angle classifier is not initialized, it will not be used during the forward process
+i2c sensor adr:4 error
+size: (972, 1296, 3)
+[2025/04/13 22:33:03] ppocr WARNING: Since the angle classifier is not initialized, it will not be used during the forward process
+{'id': 'sensors', 'time': 24.65, 'Yaw': np.float64(-145.37), 'Roll': np.float64(-16.98), 'Pitch': np.float64(-5.47), 'd_front': 829, 'd_left': 0, 'd_right': 0, 'd_front_left': 97, 'd_front_right': 0}
+distance front 829
+{'id': 'camera', 'time': 24.73, 'cam_pos': 'left', 'state': 1, 'text': 'H'}
+left camera
+{'id': 'camera', 'time': 24.85, 'cam_pos': 'rigth', 'state': 1, 'text': 'no'}
+rigth camera
+i2c sensor adr:2 error
+i2c sensor adr:4 error
+i2c sensor adr:2 error
+{'id': 'sensors', 'time': 25.25, 'Yaw': np.float64(-145.37), 'Roll': np.float64(-16.98), 'Pitch': np.float64(-5.47), 'd_front': 836, 'd_left': 0, 'd_right': 0, 'd_front_left': 88, 'd_front_right': 0}
+distance front 836
+{'id': 'sensors', 'time': 25.77, 'Yaw': np.float64(-145.37), 'Roll': np.float64(-16.97), 'Pitch': np.float64(-5.48), 'd_front': 845, 'd_left': 0, 'd_right': 0, 'd_front_left': 93, 'd_front_right': 0}
+distance front 845
+i2c sensor adr:4 error
+i2c sensor adr:2 error
+i2c sensor adr:4 error
+[2025/04/13 22:33:05] ppocr DEBUG: dt_boxes num : 1, elapsed : 2.139286756515503
+i2c sensor adr:2 error
+[2025/04/13 22:33:05] ppocr DEBUG: dt_boxes num : 0, elapsed : 2.1383535861968994
+[2025/04/13 22:33:05] ppocr DEBUG: rec_res num  : 0, elapsed : 1.6689300537109375e-06
+{'text': ('no', 0.0), 'time': 2145}
+[2025/04/13 22:33:05] ppocr DEBUG: rec_res num  : 1, elapsed : 0.20046544075012207
+{'text': ('H', 0.9965099692344666), 'time': 2348}
+{'id': 'sensors', 'time': 26.49, 'Yaw': np.float64(-145.37), 'Roll': np.float64(-16.99), 'Pitch': np.float64(-5.48), 'd_front': 843, 'd_left': 0, 'd_right': 0, 'd_front_left': 91, 'd_front_right': 0}
+distance front 843
+{'id': 'sensors', 'time': 27.12, 'Yaw': np.float64(-145.37), 'Roll': np.float64(-16.98), 'Pitch': np.float64(-5.48), 'd_front': 834, 'd_left': 0, 'd_right': 0, 'd_front_left': 87, 'd_front_right': 0}
+distance front 834
+{'id': 'camera', 'time': 27.13, 'cam_pos': 'rigth', 'state': 1, 'text': 'no'}
+rigth camera
+{'id': 'camera', 'time': 27.21, 'cam_pos': 'left', 'state': 1, 'text': 'H'}
+left camera
+size: (972, 1296, 3)
+[2025/04/13 22:33:05] ppocr WARNING: Since the angle classifier is not initialized, it will not be used during the forward process
+size: (972, 1296, 3)
+[2025/04/13 22:33:05] ppocr WARNING: Since the angle classifier is not initialized, it will not be used during the forward process
+i2c sensor adr:4 error
+i2c sensor adr:2 error
+i2c sensor adr:4 error
+{'id': 'sensors', 'time': 27.72, 'Yaw': np.float64(-145.38), 'Roll': np.float64(-16.98), 'Pitch': np.float64(-5.48), 'd_front': 838, 'd_left': 0, 'd_right': 0, 'd_front_left': 90, 'd_front_right': 0}
+distance front 838
+i2c sensor adr:2 error
+i2c sensor adr:4 error
+i2c sensor adr:2 error
+{'id': 'sensors', 'time': 28.3, 'Yaw': np.float64(-145.38), 'Roll': np.float64(-16.98), 'Pitch': np.float64(-5.48), 'd_front': 837, 'd_left': 0, 'd_right': 0, 'd_front_left': 97, 'd_front_right': 0}
+distance front 837
+{'id': 'sensors', 'time': 28.92, 'Yaw': np.float64(-145.38), 'Roll': np.float64(-16.97), 'Pitch': np.float64(-5.49), 'd_front': 854, 'd_left': 0, 'd_right': 0, 'd_front_left': 96, 'd_front_right': 0}
+distance front 854
+i2c sensor adr:4 error
+[2025/04/13 22:33:07] ppocr DEBUG: dt_boxes num : 1, elapsed : 2.154787540435791
+i2c sensor adr:2 error
+[2025/04/13 22:33:08] ppocr DEBUG: dt_boxes num : 0, elapsed : 2.3275034427642822
+[2025/04/13 22:33:08] ppocr DEBUG: rec_res num  : 0, elapsed : 2.1457672119140625e-06
+{'text': ('no', 0.0), 'time': 2331}
+size: (972, 1296, 3)
+[2025/04/13 22:33:08] ppocr WARNING: Since the angle classifier is not initialized, it will not be used during the forward process
+[2025/04/13 22:33:08] ppocr DEBUG: rec_res num  : 1, elapsed : 0.2623615264892578
+{'text': ('H', 0.9966024160385132), 'time': 2428}
+size: (972, 1296, 3)
+[2025/04/13 22:33:08] ppocr WARNING: Since the angle classifier is not initialized, it will not be used during the forward process
+i2c sensor adr:4 error
+i2c sensor adr:2 error
+Завешение датчиков
+[2025/04/13 22:33:10] ppocr DEBUG: dt_boxes num : 0, elapsed : 1.9458222389221191
+[2025/04/13 22:33:10] ppocr DEBUG: rec_res num  : 0, elapsed : 9.5367431640625e-07
+{'text': ('no', 0.0), 'time': 1949}
+[2025/04/13 22:33:10] ppocr DEBUG: dt_boxes num : 1, elapsed : 1.8337774276733398
+Завешение камеры: 1
+[2025/04/13 22:33:10] ppocr DEBUG: rec_res num  : 1, elapsed : 0.18111252784729004
+{'text': ('H', 0.9964158535003662), 'time': 2025}
+Завешение камеры: 0
+{'id': 'sensors', 'time': 29.57, 'Yaw': np.float64(-145.38), 'Roll': np.float64(-16.98), 'Pitch': np.float64(-5.47), 'd_front': 841, 'd_left': 0, 'd_right': 0, 'd_front_left': 99, 'd_front_right': 0}
+distance front 841
+{'id': 'camera', 'time': 29.57, 'cam_pos': 'rigth', 'state': 1, 'text': 'no'}
+rigth camera
+{'id': 'camera', 'time': 29.75, 'cam_pos': 'left', 'state': 1, 'text': 'H'}
+left camera
+{'id': 'sensors', 'time': 30.17, 'Yaw': np.float64(-145.37), 'Roll': np.float64(-16.98), 'Pitch': np.float64(-5.47), 'd_front': 850, 'd_left': 0, 'd_right': 0, 'd_front_left': 87, 'd_front_right': 0}
+distance front 850
+{'id': 'camera', 'time': 31.63, 'cam_pos': 'rigth', 'state': 1, 'text': 'no'}
+rigth camera
+{'id': 'camera', 'time': 31.73, 'cam_pos': 'rigth', 'state': 2, 'text': 'stoped'}
+rigth camera
+{'id': 'camera', 'time': 31.89, 'cam_pos': 'left', 'state': 1, 'text': 'H'}
+left camera
+{'id': 'camera', 'time': 31.99, 'cam_pos': 'left', 'state': 2, 'text': 'stoped'}
+left camera
+Завешение моторов
+все процессы завершены
+>>> 
